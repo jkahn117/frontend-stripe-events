@@ -1,8 +1,8 @@
 import { BellIcon, HandThumbUpIcon, ShareIcon } from "@heroicons/react/24/solid";
 import { EyeIcon } from "@heroicons/react/24/outline";
-import Button from "./components/Button";
-import VideoPlayer from "./components/VideoPlayer";
-import Tips from "./components/Tips";
+import Button from "../components/Button";
+import VideoPlayer from "../components/VideoPlayer";
+import Tips from "../components/Tips";
 
 export default function Home() {
   return (

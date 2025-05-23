@@ -1,8 +1,8 @@
 import Stripe from "stripe";
 import { headers } from 'next/headers'
 import { TopicClient, TopicPublishResponse } from "@gomomento/sdk";
-import { ensureCacheExists } from "../lib/cache";
-import { EventTypes, NewTipEvent, NewTotalEvent } from "../utils/subscriptions";
+import { ensureCacheExists } from "../../lib/cache";
+import { EventTypes, NewTipEvent, NewTotalEvent } from "../../utils/subscriptions";
 
 const {
   NEXT_PUBLIC_MOMENTO_CACHE_NAME: MOMENTO_CACHE_NAME,
