@@ -3,7 +3,7 @@ import { UserCircleIcon, VideoCameraIcon } from '@heroicons/react/24/outline';
 export default function NavBar() {
   return (
     <nav className="bg-gray-800">
-      <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
+      <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
         <div className="relative flex h-16 items-center justify-between">
           <div className="absolute inset-y-0 left-0 flex items-center sm:hidden">
             {/* Mobile menu button */}
@@ -13,7 +13,7 @@ export default function NavBar() {
               {/* <img className="h-8 w-auto" src="https://tailwindcss.com/plus-assets/img/logos/mark.svg?color=indigo&shade=500" alt="Your Company" /> */}
               <VideoCameraIcon className="size-10 text-purple-500 mr-4" />
               <h1 className="text-2xl text-purple-500 font-extrabold">
-                My Streaming Page
+                My Live Stream
               </h1>
             </div>
           </div>

@@ -9,10 +9,14 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@gomomento/sdk": "^1.111.0",
+    "@gomomento/sdk-web": "^1.111.0",
     "@heroicons/react": "^2.2.0",
+    "clsx": "^2.1.1",
     "next": "15.3.2",
     "react": "^19.0.0",
-    "react-dom": "^19.0.0"
+    "react-dom": "^19.0.0",
+    "stripe": "^18.1.1"
   },
   "devDependencies": {
     "@eslint/eslintrc": "^3",
