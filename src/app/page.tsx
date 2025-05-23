@@ -1,45 +1,16 @@
-"use client";
-
-import { useEffect, useState } from "react";
 import { BellIcon, HandThumbUpIcon, ShareIcon } from "@heroicons/react/24/solid";
 import { EyeIcon } from "@heroicons/react/24/outline";
 import Button from "./components/Button";
 import VideoPlayer from "./components/VideoPlayer";
-import ProgressBar from "./components/ProgressBar";
-import Scroller from "./components/Scroller";
+import Tips from "./components/Tips";
 
 export default function Home() {
-  const [ donors, setDonors ] = useState([]);
-
-  useEffect(() => {
-
-  }, []);
-
   return (
     <div className="w-full h-160 min-h-120">
       <VideoPlayer />
 
-      {/* Tip */}
-      <div className="border-1 border-purple-300 bg-purple-200">
-        <div className="container relative h-20 mx-auto w-full max-w-6xl mt-2 px-4 sm:px-6 lg:px-8">
-          <div className="w-full grid grid-flow-col gap-4 grid-cols-[60%]">
-            <div className="flex items-center justify-start">
-              <Button text="Tip!" big={ true } />
-              
-              <div className="relative ml-2">
-                <Scroller text="Thanks to..." items={ [ "josh - $10", "bob - $20" ] } />
-              </div>
-            </div>
-
-            {/* Progress Bar */}
-            <div className="w-full p-2 border-l-1 border-slate-400">
-              <ProgressBar text="Raised" value={ 60 } max={ 100 } />
-            </div>
-          </div>
-
-        </div>  
-      </div>
-
+      <Tips />
+      
       <div className="container mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
           {/* Title, Controls */}
           <div className="mt-4 mb-2">

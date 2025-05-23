@@ -1,3 +1,5 @@
+"use client";
+
 import { ReactNode } from "react";
 import { clsx } from "clsx";
 
@@ -6,18 +8,25 @@ interface ButtonProps {
   disabled?: boolean;
   icon?: ReactNode;
   big?: boolean;
+  link? : string;
 }
 
-export default function Button({ disabled, icon, text, big = false } : ButtonProps) {
+export default function Button({ disabled, icon, text, link, big = false } : ButtonProps) {
   const normalStyle = "h-10 px-5 text-purple-500 font-bold border-2 border-purple-500 hover:bg-purple-100";
 
   const bigStyle = "h-12 px-8 text-white font-bold text-lg border-2 border-purple-700 bg-purple-700 hover:bg-purple-800";
 
+  function handleClick() {
+    if (link) {
+      (link);
+    }
+
+    window.location.href = link || "#";
+  }
+
   return (
     <button 
-      // className={` ${
-      //   disabled ? 'opacity-50 cursor-not-allowed' : 'cursor-pointer'
-      // }`}
+      onClick={ handleClick }
       className={ clsx(
         "cursor-pointer mr-1 my-2 flex items-center rounded-md transition-colors duration-150 focus:shadow-outline",
         big ? bigStyle : normalStyle,
